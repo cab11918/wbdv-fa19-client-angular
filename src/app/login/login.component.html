@@ -1,0 +1,37 @@
+<div class="container-fluid">
+  <h1>Login</h1>
+
+  <div class="input-group col-4">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Username</span>
+    </div>
+    <input class="wbdv-field wbdv-username" [(ngModel)]="username"/>
+  </div>
+
+  <br/>
+
+  <div class="input-group col-4">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Password</span>
+    </div>
+    <input class="wbdv-field wbdv-password" [(ngModel)]="password" type="password"/>
+  </div>
+
+  <br/>
+
+
+  <button (click)="login()" type="button" class="wbdv-button wbdv-login btn btn-primary">Log In
+  </button>
+  &nbsp;
+  <a routerLink="/register">sign up !</a>
+
+
+  <div class="wbdv-message">
+    {{message}}
+
+  </div>
+
+
+</div>
+
+

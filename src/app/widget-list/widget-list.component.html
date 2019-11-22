@@ -1,0 +1,14 @@
+<div class="container-fluid">
+  <h1>Widgets</h1>
+  <p>All your widgets for that topic will be shown here</p>
+  <ul class="list-group">
+  <li class="wbdv-link wbdv-lesson list-group-item list-group-item-action"
+      *ngFor="let widget of widgets">
+    <a class="nav-link"
+       [ngClass]="{'active': widget.id == topicId}"
+       routerLink="/courses/{{courseId}}/modules/{{moduleId}}/lessons/{{lessonId}}/topics/{{topicId}}/widgets/">
+      {{widget.widgetType}}
+    </a>
+  </li>
+  </ul>
+</div>

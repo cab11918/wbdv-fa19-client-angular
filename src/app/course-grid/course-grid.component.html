@@ -1,0 +1,25 @@
+<div class="container-fluid">
+  <h1>Course List</h1>
+  <p>All your courses will be shown here</p>
+  <div class="wbdv-link wbdv-courseList">
+
+
+    <div class="wbdv-link wbdv-course" routerLink="/courses/{{course.id}}/modules"
+        *ngFor="let course of
+      courses"
+        class="list-group-item list-group-item-action text-primary center">
+
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{course.title}}</h5>
+          <p class="card-text">A Course Is A Course</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+</div>

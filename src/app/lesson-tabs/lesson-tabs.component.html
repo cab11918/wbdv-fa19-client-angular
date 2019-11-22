@@ -1,0 +1,20 @@
+
+
+
+<div class="container-fluid">
+  <h1>Lesson Tab</h1>
+  <p>All your lessons for that module will be shown here</p>
+  <ul class="nav nav-tabs">
+
+    <li class="wbdv-link wbdv-lesson nav-item"
+        *ngFor="let lesson of lessons">
+      <a class="nav-link"
+         [ngClass]="{'active': lesson.id == lessonId}"
+         routerLink="/courses/{{courseId}}/modules/{{moduleId}}/lessons/{{lesson.id}}/topics">
+        {{lesson.title}}
+      </a>
+    </li>
+  </ul>
+</div>
+
+

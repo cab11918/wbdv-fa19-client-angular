@@ -1,0 +1,27 @@
+<div class="container-fluid">
+
+
+
+  <h1>Module List</h1>
+  <p>All your modules for that course will be shown here</p>
+
+<div class="container-fluid">
+
+  <ul class="list-group">
+    <li class="wbdv-link wbdv-module list-group-item action"
+        [ngClass]="{'active' : module.id == moduleId}"
+        *ngFor="let module of modules">
+      <a routerLink="/courses/{{courseId}}/modules/{{module.id}}/lessons">
+        {{module.title}}
+      </a>
+    </li>
+  </ul>
+
+</div>
+
+
+
+
+
+
+</div>
